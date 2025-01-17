@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+#überschrift {
+  padding: 0px;
+  margin: 0px;
+  font-size: 3rem;
+}
+#slogan {
+  color: gray;
+}
+#felder {
+  display: flex;
+  flex-direction: column;
+}
+.textfelder {
+  width: 60rem;
+  margin: 0.1rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.568);
+  font-size: 1.3rem;
+  border: none;
+}
+
+.textfeldergroß {
+  height: 10rem;
+}
+
+#savebutton {
+  margin-left: 53.5rem;
+}
+
+.HinterGrund {
+  height: 600px;
+}
+
+.speicherfeld {
+  list-style-type: none;
+  padding: 0;
+}
+
+.speichern {
+  display: flex;
+  flex-direction: column;
+}
+
+.speicher {
+  width: 60rem;
+  height: 3rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  margin: 0.1rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.568);
+  display: flex;
+  align-items: center;
+}
+
+.Delete {
+  width: 2rem;
+  margin-left: auto;
+  align-self: center;
+}
+
+.deleteButton {
+  margin-left: auto;
+  align-self: center;
+  align-items: center;
+  background-color:  rgba(255, 255, 255, 0);
+  border: none;
+  padding: 0;
+}
