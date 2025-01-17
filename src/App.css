@@ -58,19 +58,34 @@
   background-color: rgba(255, 255, 255, 0.568);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .Delete {
   width: 2rem;
-  margin-left: auto;
   align-self: center;
 }
 
-.deleteButton {
-  margin-left: auto;
+.deleteButton,
+.openButton {
+  display: flex;
+  margin: 0;
   align-self: center;
   align-items: center;
-  background-color:  rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
   padding: 0;
+}
+
+
+
+.Haken {
+  width: 2rem;
+  align-self: center;
+
+}
+
+.buttons-container {
+  display: flex; /* Buttons nebeneinander darstellen */
+  gap: 0.5rem; /* Abstand zwischen den Buttons */
 }
