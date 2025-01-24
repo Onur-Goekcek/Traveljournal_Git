@@ -10,7 +10,7 @@ export default function SaveButton(props) {
     <li className="speicher" key={saveInput.id} index={saveInput.id}>
       {save.titel}
       <div className="buttons-container">
-        <button className="openButton" onClick={openInfo}>
+        <button className="openButton" onClick={() =>openInfo(save.id)}>
           <img src={haken} className="Haken" />
         </button>
         <button className="deleteButton" onClick={() => deleteList(save.id)}>
@@ -23,10 +23,12 @@ export default function SaveButton(props) {
     </li>
   ));
 
-  function openInfo() {
+  function openInfo(e) {
+    console.log(saveInput)
+    const foundItem = saveInput.find((save) => save.id === e);
     const newWindow = window.open("", "_blank", "width=600,height=400");
-    newWindow.document.write(`<h1>${props.date}</h1>
-    <p>${props.inhalt}</p>`);
+    newWindow.document.write(`<h1>${foundItem.date}</h1>
+    <p>${foundItem.inhalt}</p>`);
   }
 
   function changeSave() {
@@ -34,8 +36,10 @@ export default function SaveButton(props) {
     const newTitel = {
       id: newIndex,
       titel: props.titel,
+      date: props.date,
+      inhalt: props.inhalt,
     };
-    console.log(props)
+    console.log(props.date)
     setSave((prevSaveInput) => [...prevSaveInput, newTitel]);
   }
 

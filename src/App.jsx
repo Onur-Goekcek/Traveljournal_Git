@@ -3,7 +3,7 @@ import "./App.css";
 import Text from "./Texte";
 import TextFeld from "./TextFelder";
 import SaveButton from "./SaveButton";
-import HinterGrundFeld from "./SpeicherGrid";
+
 
 function App() {
   const [titelText, setTiteltext] = useState("");
@@ -48,7 +48,6 @@ function App() {
       date = {dateText}
       inhalt = {inhaltText}
       />
-      <HinterGrundFeld />
     </div>
   );
 }
